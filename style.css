@@ -1,0 +1,58 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.hero-section{
+    background-image: url("./images/main.png.jpg");
+    min-height: 500px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+.hero-content{
+    height: inherit; 
+}
+.product:hover{
+    color: white;
+    background: black;
+    border-radius: 5px ;
+}
+.product-cards .card-item .product-img img{
+    width: 200px;
+    min-height: 285px;
+}
+.product-desc h4{
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.product-desc p{
+    
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.borchure-cards .card-item .card-img img{
+    
+    width: 100%;
+}
+@media (min-width:992px){
+.btn-hover:hover{
+    color:white ;
+    background: black ;
+    border-radius: 5px ;
+}
+.border-lg{
+    border:1px solid black !important;
+    border-radius: 5px !important;
+}
+
+}
+@media (max-width:769px){
+    .about-desc p{
+        font-size: 0.9rem !important;
+    }
+}
