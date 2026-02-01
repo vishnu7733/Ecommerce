@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <!--header section start-->
+    <header class="px-4 py-3">
+        <nav class="navbar navbar-expand-lg bg-white">
+            <div class="container-fluid">
+                <a class="navbar-brand fw-bolder fs-3 " href="#">Ecommerce</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav  mb-2 mb-lg-0 ms-auto ">
+                        <li class="nav-item ">
+                            <a href="main.html" class="nav-link fs-5 ">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="products.html" class="nav-link fs-5">Products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="about.html" class="nav-link fs-5 ">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contact.html" class="nav-link fs-5 active">Contact</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item me-lg-2 mb-2 btn-hover ">
+                            <button class="btn border-0 border-lg border-black">
+                                <span><i class="fa fa-sign-in"></i></span>
+                                <span class="fs-5">Login</span>
+                            </button>
+                        </li>
+                        <li class="nav-item me-lg-2 mb-2 btn-hover">
+                            <button class="btn border-0 border-lg border-black">
+                                <span><i class="fa fa-user-plus"></i></span>
+                                <span class="fs-5">Register</span>
+                            </button>
+                        </li>
+                        <li class="nav-item me-lg-2 mb-2 btn-hover">
+                            <button class="btn border-0 border-lg border-black">
+                                <span><i class="fa fa-shopping-cart"></i></span>
+                                <span class="fs-5">Cart</span>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+    <!-- header section end-->
+    <!--Main section start-->
+    <main>
+        <!--Contact section start-->
+        <div class="contact-section d-flex flex-column align-items-center mx-5 my-3">
+             <div class="contact-heading border-bottom py-2 mb-4 w-100 text-center">
+                <h1 class="fs-1  ">Contact us</h1>
+             </div>
+             <div class="form-section w-100 d-flex flex-column align-items-center">
+                <form class="form " method="post" >
+                    <div class="mb-3">
+                        <label class="form-label" for="Name">Name</label>
+                        <input class="form-control"  name="Name" type="text" placeholder="Enter your name " required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label" for="Email">Email</label>
+                        <input class="form-control " name="Email" type="email" placeholder="Enter your Email">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label" for="Message">Message</label>
+                        <textarea class="form-control " name="Message"  placeholder="Enter your message" rows="4"></textarea>
+                    </div>
+                    <div class="mb-3 text-center">
+                        <button type="submit" class="btn btn-secondary">Submit</button>
+                    </div>
+                </form>
+             </div>
+        </div>
+        <!--Contact section start-->
+    </main>
+    <!--Main section end-->
+    <!--Footer section start-->
+    <footer>
+        <div class="text-center">
+            <p class="fs-5"> Made with <span><i class="fa fa-heart text-danger"></i></span> by Vishnu</p>
+        </div>
+
+    </footer>
+    <!--Footer section end-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+</html>
