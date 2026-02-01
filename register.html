@@ -39,13 +39,13 @@
                     </ul>
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item me-lg-2 mb-2 btn-hover  ">
-                            <a class="btn border-0 border-lg border-black bg-black rounded text-light" href="loginpage.html"  >
+                            <a class="btn border-0 border-lg border-black " href="loginpage.html"  >
                                 <span><i class="fa fa-sign-in "></i></span>
                                 <span class="fs-5 ">Login</span>
                             </a>
                         </li>
                         <li class="nav-item me-lg-2 mb-2 btn-hover">
-                            <a class="btn border-0 border-lg border-black" href="register.html">
+                            <a class="btn border-0 border-lg border-black bg-black text-light" href="register.html">
                                 <span><i class="fa fa-user-plus"></i></span>
                                 <span class="fs-5">Register</span>
                             </a>
@@ -65,31 +65,35 @@
     <!-- header section end-->
     <!--Main section start-->
     <main>
-        <!--Login section start-->
-        <div class="login-section d-flex flex-column align-items-center mx-5 my-3">
-             <div class="login-heading border-bottom py-2 mb-4 w-100 text-center">
-                <h1 class="fs-1  ">Login</h1>
+        <!--Register section start-->
+        <div class="Register-section d-flex flex-column align-items-center mx-5 my-3">
+             <div class="Register border-bottom py-2 mb-4 w-100 text-center">
+                <h1 class="fs-1  ">Register</h1>
              </div>
              <div class="form-section w-100 d-flex flex-column align-items-center">
                 <form class="form " method="post" >
+                    <div class="mb-3">
+                        <label class="form-label" for="FName">Fullname</label>
+                        <input class="form-control"  name="FName" type="text" placeholder="Enter your Fullname " required>
+                    </div>
                     <div class="mb-3">
                         <label class="form-label" for="Email">Name</label>
                         <input class="form-control"  name="Email" type="email" placeholder="Enter your Email Address " required>
                     </div>
                     <div class="mb-3">
-                        <label class="form-label" for="password">Password</label>
+                        <label class="form-label" for="password">Email</label>
                         <input class="form-control " name="password" type="password" placeholder="Enter your password">
                     </div>
                     <div class="mb-3">
-                        <p>New Here ? <span><a href="register.html">Register</a></span></p>
+                        <p>Already have an account? <span><a href="loginpage.html">Login</a></span></p>
                     </div>
                     <div class="mb-3 text-center">
-                        <button type="submit" class="btn btn-secondary">Login</button>
+                        <button type="submit" class="btn btn-secondary">Register</button>
                     </div>
                 </form>
              </div>
         </div>
-        <!--Login section start-->
+        <!--Register section start-->
     </main>
     <!--Main section end-->
     <!--Footer section start-->

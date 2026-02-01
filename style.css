@@ -41,14 +41,15 @@ body{
 }
 .form-section form div input[type="text"],
 .form-section form div input[type="email"],
+.form-section form div input[type="password"],
 .form-section form div textarea{
-    width:140%;
+    width:270px;
 }
-.login-section form div input[type="password"],
+/* .login-section form div input[type="password"],
 .login-section form div input[type="email"]
 {
     width:140%;
-}
+} */
 
 @media (min-width:992px){
 .btn-hover:hover{
