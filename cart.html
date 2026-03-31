@@ -4,19 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>E-commerce </title>
+    <link rel="stylesheet" href="./cs.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 </head>
 
 <body>
-    <!--header section start-->
-    <header class="px-4 py-3">
-        <nav class="navbar navbar-expand-lg bg-white">
+    <header class="px-0 py-0 px-md-5 py-md-3">
+        <nav class="navbar navbar-expand-lg ">
             <div class="container-fluid">
-                <a class="navbar-brand fw-bolder fs-3 " href="#">Ecommerce</a>
+                <a class="navbar-brand fw-bold fs-3 " href="./index.html">Ecommerce</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -25,212 +24,108 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav  mb-2 mb-lg-0 ms-auto ">
                         <li class="nav-item ">
-                            <a href="main.html" class="nav-link fs-5 ">Home</a>
+                            <a href="./index.html" class="nav-link fs-6 fw-bold">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a href="products.html" class="nav-link fs-5">Products</a>
+                            <a href="./product.html" class="nav-link fs-6">Products</a>
                         </li>
                         <li class="nav-item">
-                            <a href="about.html" class="nav-link fs-5 ">About</a>
+                            <a href="./About.html" class="nav-link fs-6">About</a>
                         </li>
                         <li class="nav-item">
-                            <a href="contact.html" class="nav-link fs-5 ">Contact</a>
+                            <a href="./Contact.html" class="nav-link fs-6">Contact</a>
                         </li>
                     </ul>
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item me-lg-2 mb-2 btn-hover ">
-                            <a class="btn border-0 border-lg border-black" href="loginpage.html">
-                                <span><i class="fa fa-sign-in"></i></span>
-                                <span class="fs-5">Login</span>
-                            </a>
-                        </li>
+                    <ul class="head-acc navbar-nav ms-auto">
                         <li class="nav-item me-lg-2 mb-2 btn-hover">
-                            <a class="btn border-0 border-lg border-black" href="register.html">
-                                <span><i class="fa fa-user-plus"></i></span>
-                                <span class="fs-5">Register</span>
+                            <a href="./login.html" class="btn border-1 border-black ">
+                                <span><i class="bi bi-box-arrow-in-right"></i></span>
+                                <span class="fs-6">Login</span>
                             </a>
                         </li>
-                        <li class="nav-item me-lg-2 mb-2 btn-hover">
-                            <a class="btn border-0 border-lg border-black bg-black text-light" href="cart.html">
-                                <span><i class="fa fa-shopping-cart"></i></span>
-                                <span class="fs-5">Cart(6)</span>
+
+                        <li class=" head-acc nav-item me-lg-2 mb-2 btn-hover ">
+                            <a href="./register.html" class="btn border-1 border-black ">
+                                <span><i class="bi bi-person-plus-fill"></i></span>
+                                <span class="fs-6">Register</span>
                             </a>
                         </li>
+
+                        <li class=" head-acc nav-item me-lg-2 mb-2 btn-hover">
+                            <a href="./cart.html" class="btn border-1 border-black bg-black text-white">
+                                <span><i class="bi bi-cart-fill"></i></span>
+                                <span class="fs-6">Cart(<span class="prod-length"></span>)</span>
+                            </a>
+                        </li>
+
+
                     </ul>
                 </div>
 
             </div>
         </nav>
+
     </header>
-    <!-- header section end-->
-    <!--Main section start-->
+
     <main>
-        <!--cart section start-->
-        <div class="cart-section d-flex flex-column  px-5">
-            <div class="cart-heading w-100 border-bottom text-center">
-                <h1 class="fs-1">Cart</h1>
-            </div>
-            <div class="cart-main row my-5 gap-3 justify-content-evenly ">
-                <div class="col-12 col-lg-6 cart-list border rounded p-0  overflow-hidden">
-                    <div class="list ">
-                        <div class="list-heading bg-body-tertiary  w-100 px-4  ">
-                            <p class="fw-bold fs-5 m-0">Item List</p>
-                        </div>
-                        <div class="list-items d-flex flex-column ">
-                            <div class="list-item row p-3 justify-content-evenly align-items-center border-bottom">
-                                <div class="item-img col-sm-7 col-md-5 col-lg-3 ">
-                                    <img src="./images/images/81fPKd-2AYL._AC_SL1500_.jpg">
-                                </div>
-                                <div class="item-desc col-sm-7 col-md-5 col-lg-3">
-                                    <p class="fw-bold">Fjallraven - Foldsack No. 1
-                                    Backpack, Fits 15 Laptops</p>
-                                </div>
-                                <div class="item-value col-sm-7 col-md-5 col-lg-3">
-                                    <div class="item-quantity d-flex   justify-content-between">
-                                         <i class="fa fa-minus"></i>
-                                         <p>1</p>
-                                         <i class="fa fa-plus"></i>
-                                    </div>
-                                    <div class="item-price">
-                                        <p>1 &times; 109.95 $</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="list-item row p-3 align-items-center justify-content-evenly border-bottom">
-                                <div class="item-img col-sm-7 col-md-5 col-lg-3 ">
-                                    <img src="./images/images/71li-ujtlUL._AC_UX679_.jpg">
-                                </div>
-                                <div class="item-desc col-sm-7 col-md-5 col-lg-3">
-                                    <p class="fw-bold">Mens Cotton Jacket</p>
-                                </div>
-                                <div class="item-value col-sm-7 col-md-5 col-lg-3">
-                                    <div class="item-quantity d-flex justify-content-between">
-                                         <i class="fa fa-minus"></i>
-                                         <p>1</p>
-                                         <i class="fa fa-plus"></i>
-                                    </div>
-                                    <div class="item-price">
-                                        <p>1 &times; 59.99 $</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="list-item row p-3  align-items-center justify-content-evenly border-bottom">
-                                <div class="item-img col-sm-7 col-md-5 col-lg-3 ">
-                                    <img src="./images/images/71pWzhdJNwL._AC_UL640_QL65_ML3_.jpg">
-                                </div>
-                                <div class="item-desc col-sm-7 col-md-5 col-lg-3">
-                                    <p class="fw-bold">John Hardy Women’s Bracelet</p>
-                                </div>
-                                <div class="item-value col-sm-7 col-md-5 col-lg-3">
-                                    <div class="item-quantity d-flex justify-content-between">
-                                         <i class="fa fa-minus"></i>
-                                         <p>1</p>
-                                         <i class="fa fa-plus"></i>
-                                    </div>
-                                    <div class="item-price">
-                                        <p>1 &times; 695 $</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="list-item row p-3 align-items-center justify-content-evenly border-bottom">
-                                <div class="item-img col-sm-7 col-md-5 col-lg-3 ">
-                                    <img src="./images/images/61sbMiUnoGL._AC_UL640_QL65_ML3_.jpg">
-                                </div>
-                                <div class="item-desc col-sm-7 col-md-5 col-lg-3">
-                                    <p class="fw-bold">Solid Gold Petite Micropave</p>
-                                </div>
-                                <div class="item-value col-sm-7 col-md-5 col-lg-3">
-                                    <div class="item-quantity d-flex justify-content-between">
-                                         <i class="fa fa-minus"></i>
-                                         <p>1</p>
-                                         <i class="fa fa-plus"></i>
-                                    </div>
-                                    <div class="item-price">
-                                        <p>1 &times; 168 $</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="list-item row p-3 align-items-center justify-content-evenly border-bottom">
-                                <div class="item-img col-sm-7 col-md-5 col-lg-3 ">
-                                    <img src="./images/images/51UDEzMJVpL._AC_UL640_QL65_ML3_.jpg">
-                                </div>
-                                <div class="item-desc col-sm-7 col-md-5 col-lg-3">
-                                    <p class="fw-bold">Pierced Owl Rose Gold Earrings</p>
-                                </div>
-                                <div class="item-value col-sm-7 col-md-5 col-lg-3">
-                                    <div class="item-quantity d-flex justify-content-between">
-                                         <i class="fa fa-minus"></i>
-                                         <p>1</p>
-                                         <i class="fa fa-plus"></i>
-                                    </div>
-                                    <div class="item-price">
-                                        <p>1 &times; 10.99 $</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="list-item row p-3 align-items-center justify-content-evenly border-bottom">
-                                <div class="item-img col-sm-7 col-md-5 col-lg-3 ">
-                                    <img src="./images/images/71kWymZ+c+L._AC_SX679_.jpg">
-                                </div>
-                                <div class="item-desc col-sm-7 col-md-5 col-lg-3">
-                                    <p class="fw-bold">Silicon Power 256GB SSD</p>
-                                </div>
-                                <div class="item-value col-sm-7 col-md-5 col-lg-3">
-                                    <div class="item-quantity d-flex justify-content-between">
-                                         <i class="fa fa-minus"></i>
-                                         <p>1</p>
-                                         <i class="fa fa-plus"></i>
-                                    </div>
-                                    <div class="item-price">
-                                        <p>1 &times; 109 $</p>
-                                    </div>
-                                </div>
-                            </div>
-                            
+        <h2 style="text-align:center;margin-top:40px;">Cart</h2>
+        <hr class="w-75 mx-auto">
+        <div id="default-cart" style="text-align:center;margin-top:6%">
+            <h1>your cart is empty</h1>
+            <a href="./index.html" class="p-2 border rounded-5 btn-hover">
+                <i class="bi bi-arrow-bar-left"></i>Continue Shopping</a>
 
-                        </div>
+        </div>
+        <div id="cart-page" class="container mt-4">
+
+
+
+            <!-- Products will come here -->
+            <div class="d-lg-flex carw">
+                <div class="border border-black  custom-width  ">
+                    <h2 class=" border-bottom pb-2">Items</h2>
+                    <div id="cartdispprod">
                     </div>
                 </div>
-                <div class="cart-summary col-12 col-sm-12 col-lg-3 border rounded h-25 p-0">
-                    <div class="summary-heading w-100 bg-body-tertiary px-4 ">
-                        <p class=" fw-bold p-1">Order Summary</p>
-                    </div>
-                    <div class="summary-amount p-3">
-                        <div class="d-flex justify-content-between">
-                            <p>Products(6)</p>
-                            <p>$ 1149</p>
-                        </div>
-                         <div class="d-flex justify-content-between">
-                            <p>Shipping</p>
-                            <p>$ 30</p>
-                        </div>
-                         <div class="d-flex justify-content-between">
-                            <p class="fw-bold">Total amount</p>
-                            <p class="fw-bold">$ 1149</p>
-                        </div>
-                        <div class="checkout-btn">
-                            <button class="btn bg-black text-light w-100">Go to Checkout</button>
-                        </div>
-                    </div>
+
+
+                <!-- Total price -->
+                <div class=" ms-sm-5 border border-black mt-el-5 summt " style="height:250px;width:300px">
+                    <h3 style="padding: 5px 0 0 5px;"> order summery</h3>
+                    <hr>
+
+                    <div id="totalprice" class="mt-4 text-end fs-5 fw-bold"></div>
+
                 </div>
 
             </div>
 
         </div>
-        <!--cart section end-->
     </main>
-    <!--Main section end-->
-    <!--Footer section start-->
-    <footer>
-        <div class="text-center">
-            <p class="fs-5"> Made with <span><i class="fa fa-heart text-danger"></i></span> by Vishnu</p>
-        </div>
 
+
+
+
+
+
+
+
+
+
+    <footer class="text-center fs-4 ">
+        <p>Made with <i class="bi bi-heart-fill text-danger"></i> by Bhanu-D-U</p>
     </footer>
-    <!--Footer section end-->
+
+
+
+
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
+    <script src="./cartjs.js"></script>
+
 </body>
 
 </html>
